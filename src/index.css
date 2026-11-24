@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-espresso-950: #090706;
+  --color-espresso-900: #0e0b09;
+  --color-espresso-800: #17120f;
+  --color-espresso-700: #1d1713;
+  --color-ivory-100: #f6f0e6;
+  --color-ivory-300: #c7bba9;
+  --color-ivory-500: #8f8373;
+  --color-gold-400: #d4b475;
+  --color-gold-300: #ecd49f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #0e0b09;
+    color: #f6f0e6;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.65;
+    background-color: #0e0b09;
+    color: #f6f0e6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  :focus-visible {
+    outline: 2px solid #d4b475;
+    outline-offset: 3px;
+  }
+
+  /* Color scheme for native date picker in dark luxury surface */
+  input[type="date"] {
+    color-scheme: dark;
+  }
+}
+
+.luxury-ease {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

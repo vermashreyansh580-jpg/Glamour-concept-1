@@ -1,0 +1,6 @@
+{
+  "name": "Glamour Hub — Luxury Beauty Studio",
+  "description": "Bespoke bridal artistry, signature hair styling, and restorative beauty rituals crafted for moments that deserve quiet perfection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
